@@ -14,7 +14,7 @@
 
 <script>
     const startSocket = () => {
-        let socket = io('https://t-socket-io.onrender.com:4000')
+        let socket = io('https://t-socket-io.onrender.com')
         socket.emit('connected', 'From Client')
         socket.on('server', (msg) => {
             console.log(msg)
